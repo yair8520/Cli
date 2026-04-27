@@ -14,7 +14,7 @@ const ${name}: React.FC<${name}Props> = () => {
 export default ${name};
 `;
 exports.componentTemplate = componentTemplate;
-const stylesTemplate = (name) => `import { StyleSheet } from 'react-native';
+const stylesTemplate = (_name) => `import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {},
