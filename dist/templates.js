@@ -6,16 +6,20 @@ const componentTemplate = (name) => `import { View } from 'react-native';
 import { styles } from './${name}.styles';
 import type { ${name}Props } from './${name}.types';
 
-const ${name} = ({}: ${name}Props) => {
+export const ${name} = ({}: ${name}Props) => {
   return <View style={styles.container} />;
 };
 
 export default ${name};
 `;
 exports.componentTemplate = componentTemplate;
-const stylesTemplate = (_name) => `import { StyleSheet } from 'react-native';
+const stylesTemplate = (_name) => `import { StyleSheet, ViewStyle } from 'react-native';
 
-export const styles = StyleSheet.create({
+type Styles = {
+  container: ViewStyle;
+};
+
+export const styles = StyleSheet.create<Styles>({
   container: {},
 });
 `;
@@ -25,7 +29,7 @@ const typesTemplate = (name) => `export interface ${name}Props {
 }
 `;
 exports.typesTemplate = typesTemplate;
-const indexTemplate = (name) => `export { default } from './${name}';
+const indexTemplate = (name) => `export { default, ${name} } from './${name}';
 export type { ${name}Props } from './${name}.types';
 `;
 exports.indexTemplate = indexTemplate;
