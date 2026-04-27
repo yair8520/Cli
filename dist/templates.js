@@ -13,13 +13,9 @@ export const ${name} = ({}: ${name}Props) => {
 export default ${name};
 `;
 exports.componentTemplate = componentTemplate;
-const stylesTemplate = (_name) => `import { StyleSheet, ViewStyle } from 'react-native';
+const stylesTemplate = (_name) => `import { StyleSheet } from 'react-native';
 
-type Styles = {
-  container: ViewStyle;
-};
-
-export const styles = StyleSheet.create<Styles>({
+export const styles = StyleSheet.create({
   container: {},
 });
 `;
