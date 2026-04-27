@@ -1,10 +1,9 @@
-export const componentTemplate = (name: string): string => `import React from 'react';
-import { View } from 'react-native';
+export const componentTemplate = (name: string): string => `import { View } from 'react-native';
 
 import { styles } from './${name}.styles';
 import type { ${name}Props } from './${name}.types';
 
-const ${name}: React.FC<${name}Props> = () => {
+const ${name} = ({}: ${name}Props) => {
   return <View style={styles.container} />;
 };
 

@@ -1,13 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.indexTemplate = exports.typesTemplate = exports.stylesTemplate = exports.componentTemplate = void 0;
-const componentTemplate = (name) => `import React from 'react';
-import { View } from 'react-native';
+const componentTemplate = (name) => `import { View } from 'react-native';
 
 import { styles } from './${name}.styles';
 import type { ${name}Props } from './${name}.types';
 
-const ${name}: React.FC<${name}Props> = () => {
+const ${name} = ({}: ${name}Props) => {
   return <View style={styles.container} />;
 };
 
