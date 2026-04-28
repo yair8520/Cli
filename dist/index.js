@@ -33,7 +33,7 @@ function validateComponentName(value) {
 }
 const program = new commander_1.Command();
 program
-    .name('rn-gen')
+    .name('rngx')
     .description('React Native component generator')
     .version('1.0.0')
     .argument('[name]', 'component name')
