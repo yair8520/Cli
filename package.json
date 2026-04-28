@@ -27,6 +27,15 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
-  "keywords": ["react-native", "cli", "generator", "component"],
-  "license": "MIT"
+  "keywords": ["react-native", "cli", "generator", "component", "scaffold"],
+  "author": "yair8520",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yair8520/Cli.git"
+  },
+  "homepage": "https://github.com/yair8520/Cli#readme",
+  "bugs": {
+    "url": "https://github.com/yair8520/Cli/issues"
+  }
 }
