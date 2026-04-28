@@ -6,7 +6,7 @@ import type { ${name}Props } from './${name}.types';
 export const ${name} = ({}: ${name}Props) => {
   return (
     <View style={styles.container}>
-      <Text>Hello</Text>
+      <Text>${name}</Text>
     </View>
   );
 };
