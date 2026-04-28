@@ -1,10 +1,11 @@
 {
   "name": "rngx-cli",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "React Native component generator CLI",
   "main": "dist/index.js",
   "bin": {
-    "rngx": "dist/index.js"
+    "rngx": "dist/index.js",
+    "rngx-gen": "dist/index.js"
   },
   "files": [
     "dist/"
