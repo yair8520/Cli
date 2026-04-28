@@ -1,13 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.indexTemplate = exports.typesTemplate = exports.stylesTemplate = exports.componentTemplate = void 0;
-const componentTemplate = (name) => `import { View } from 'react-native';
+const componentTemplate = (name) => `import { View, Text } from 'react-native';
 
 import { styles } from './${name}.styles';
 import type { ${name}Props } from './${name}.types';
 
 export const ${name} = ({}: ${name}Props) => {
-  return <View style={styles.container} />;
+  return (
+    <View style={styles.container}>
+      <Text>Hello</Text>
+    </View>
+  );
 };
 
 export default ${name};
@@ -21,7 +25,7 @@ export const styles = StyleSheet.create({
 `;
 exports.stylesTemplate = stylesTemplate;
 const typesTemplate = (name) => `export interface ${name}Props {
-  // define props here
+  [key: string]: any;
 }
 `;
 exports.typesTemplate = typesTemplate;
