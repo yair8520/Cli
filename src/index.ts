@@ -29,7 +29,7 @@ function validateComponentName(value: string): true | string {
 const program = new Command();
 
 program
-  .name('rngx')
+  .name('rngx-cli')
   .description('React Native component generator')
   .version('1.0.0')
   .argument('[name]', 'component name')

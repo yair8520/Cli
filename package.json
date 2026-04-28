@@ -1,6 +1,6 @@
 {
   "name": "rngx-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native component generator CLI",
   "main": "dist/index.js",
   "bin": {
@@ -27,7 +27,13 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
-  "keywords": ["react-native", "cli", "generator", "component", "scaffold"],
+  "keywords": [
+    "react-native",
+    "cli",
+    "generator",
+    "component",
+    "scaffold"
+  ],
   "author": "yair8520",
   "license": "MIT",
   "repository": {
